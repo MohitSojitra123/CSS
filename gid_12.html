@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 12</title>
+</head>
+<style>
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: wheat;
+
+
+    display: grid;
+    /* padding: 10px; */
+
+    gap: 10px;
+
+    /* grid-template-columns: 100px 100px; */
+    /* grid-template-rows: 100px 100px 100px; */
+
+    /* grid-template-columns: repeat(2,100px);
+    grid-template-rows:repeat(3,100px) ; */
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+
+
+.item{
+    background-color: blue;
+    border: 3px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-1{
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+
+    /* Short Cut Way */
+    grid-column: 1/4;
+
+
+}
+
+.item-6{
+    grid-column-start: -4;
+    grid-column-end: -1;
+}
+
+.item-2{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.item-3{
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="item-1 item"><h1>Header</h1></div>
+        <div class="item-2 item"><h1>Sidebar</h1></div>
+        <div class="item-3 item"><h1>Content 1</h1></div>
+        <div class="item-4 item"><h1>Content 2</h1></div>
+        <div class="item-5 item"><h1>Content 3</h1></div>
+        <div class="item-6 item"><h1>Footer</h1></div>
+    </div>
+</body>
+</html>

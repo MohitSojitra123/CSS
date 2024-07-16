@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.box1{
+    width: 100%;
+    height: 200px;
+    border: 2px solid black;
+    position: relative;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.sun{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255,165,0,1);
+    border: 2px solid red;
+    border-radius: 50%;
+    position: absolute ;
+    top: 50px;
+    left: -40px;
+    animation: sun1 5s ease-in-out;
+
+
+}
+
+
+.cl1{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    opacity: 0.8;
+    animation: clo1 5s   linear;
+}
+
+.cl2{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 30px;
+    left: 550px;
+    opacity: 0.8;
+    animation: clo2 3s  ease-in;
+    animation-delay: 2s;
+
+}
+
+.cl3{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 40px;
+    right: -20px;
+    opacity: 0.8;
+    animation: clo3 5s ease-out;
+}
+
+@keyframes clo1{
+    from{
+    top: 20px;
+    left: -10px;
+    }
+    to{
+        top: 20px;
+        left: 110%;
+    }
+}
+
+@keyframes clo2{
+    
+    from{
+    top: 30px;
+    left: 550px;
+    }
+    to{
+        top: 30px;
+    left: 110%;
+    }
+}
+
+@keyframes clo3{
+    from{
+    top: 40px;
+    right: -20px;
+    }
+    to{
+      top: 40px;
+      right: 110%;
+    }
+}
+
+
+@keyframes sun1{
+    from{
+        top: 50px;
+    left: -40px;
+    background-color: rgba(255, 165, 0, 0.2);
+    }
+    to{
+      top: 15px;
+      left: 110%;
+    background-color: rgba(255, 165, 0, 0.9);
+    }
+}
+</style>
+<body>
+    <div class="box1">
+        <div class="sun"></div>
+         <div class="cl1">
+            <img src="./assert/final_img.png" width="100%"  height="100%" alt="">
+         </div>
+
+         <div class="cl2">
+            <img src="./assert/final_img.png" width="100%"  height="100%" alt="">
+         </div>
+
+         <div class="cl3">
+            <img src="./assert/final_img.png" width="100%"  height="100%" alt="">
+         </div>
+
+         
+    </div>
+</body>
+</html>

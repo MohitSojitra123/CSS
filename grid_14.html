@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+main{
+    width: 700px;
+    height: 600px;
+    border: 2px solid;
+    padding: 10px;
+    margin: auto;
+    display: grid;
+    /* grid-template-columns: 150px 150px 150px 150px; */
+    grid-template-columns: auto auto auto ;
+    
+    /* grid-column-gap: 10px;
+    grid-row-gap: 10px; */
+
+    grid-gap: 10px 10px
+}
+
+main div{
+    padding: 50px;
+    background-color: aqua;
+    border: 2px solid   red;
+    font-size: 60px;
+}
+
+
+/* #id1{
+   grid-column-start: 1;
+   grid-column-end: 3;
+} */
+
+#id1{
+  grid-row-start: 1;
+  grid-row-end: 3; 
+}
+
+</style>
+<body>
+    <main>
+         <div id="id1">1</div>
+         <div>2</div>
+         <div>3</div>
+         <div>4</div>
+         <div>5</div>
+         <div>6</div>
+         <div>7</div>
+         <div>8</div>
+    </main>
+</body>
+</html>

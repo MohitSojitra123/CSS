@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    /* 
+       1.Static (default) -normal flow
+       2.relative
+       3.fixed
+       4.absolute
+
+       1.top
+       2.bottom
+       3.left
+       4.right
+    */
+
+    /*  relative :== relative are position counnting in your current space
+      */
+
+      /* absolute :== absoult are position set  in body.. body position accouerding set
+       */
+
+   #parent{
+      border: 2px solid red;
+      padding: 150px;
+      width: 50%;
+   } 
+
+   #one{
+   width: 100px;
+   height: 100px;
+   background-color: aqua;
+   display: inline-block;
+   }
+
+   #two{
+    width: 100px;
+   height: 100px;
+   background-color:yellow;
+   display: inline-block; 
+   
+   position: relative;
+   left: 100px;
+   top: 300px;
+
+   }
+
+   #three{
+    width: 100px;
+   height: 100px;
+   background-color:cadetblue ;
+   display: inline-block;
+   }
+
+</style>
+<body>
+    <div id="parent">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+    </div>
+</body>
+</html>

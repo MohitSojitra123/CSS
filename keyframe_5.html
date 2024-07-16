@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        width: 700px;
+        height: 150px;
+        border: 2px solid black;
+        margin: 50px auto;
+        position: relative;
+    }
+
+    .box{
+        width: 200px;
+        height: 100px;
+        margin-top: 20px;
+        background: red;
+        animation: box  4s;
+        position: absolute;
+
+        /* animation-timing-function: linear; */
+        /* animation-timing-function: ease; */
+        /* animation-timing-function:ease-in ; */
+        /* animation-timing-function: ease-in-out; */
+        /* animation-timing-function: ease-out; */
+
+    }
+
+    @keyframes box{
+        from{
+          left: 0px;
+        }
+        to{
+            left: 500px;
+        }
+    }
+</style>
+<body>
+    <div class="main">
+
+        <div class="box">
+
+        
+        </div>
+
+    </div>
+</body>
+</html>

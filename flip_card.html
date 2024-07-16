@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- /* icon */ -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css" integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- /* icon */ -->
+
+<!-- jquery cdn -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- jquery cdn -->
+<style>
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.flip{
+    width: 400px;
+    height: 550px;
+    background-color: aqua;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.flip img{
+    object-position: center;
+}
+
+.upper{
+    width: inherit;
+    height: inherit;
+    background-color:antiquewhite;
+    position: absolute;
+    top: 0px;
+    padding: 20px;
+    /* display: none; */
+}
+
+.upper p{
+    font-size: 20px;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon span{
+    font-size: 25px;
+    margin-inline: 20px;
+}
+
+
+
+</style>
+<body>
+
+    <div class="container">
+    <div class="flip">
+        <img src="./assert/a_11.jpg" width="100%" height="100%" alt="">
+        <div class="upper">
+          <h1>Lorem, ipsum dolor.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo dignissimos eveniet vitae, minima vel corporis commodi eius. Beatae minima, illum adipisci repudiandae sunt sit id cumque sint aspernatur vel dolores!</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo dignissimos eveniet vitae, minima vel corporis commodi eius. Beatae minima, illum adipisci repudiandae sunt sit id cumque sint aspernatur vel dolores!</p>
+
+          <div class="icon">
+
+            <span><i class="ri-facebook-fill"></i></span>
+            <span><i class="ri-instagram-line"></i></span>
+            <span><i class="ri-linkedin-fill"></i></span>
+            <span><i class="ri-whatsapp-line"></i></span>
+
+          </div>
+        </div>
+    </div>
+
+    <div class="flip">
+        <img src="./assert/a_11.jpg" width="100%" height="100%" alt="">
+        <div class="upper">
+          <h1>Lorem, ipsum dolor.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo dignissimos eveniet vitae, minima vel corporis commodi eius. Beatae minima, illum adipisci repudiandae sunt sit id cumque sint aspernatur vel dolores!</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo dignissimos eveniet vitae, minima vel corporis commodi eius. Beatae minima, illum adipisci repudiandae sunt sit id cumque sint aspernatur vel dolores!</p>
+
+          <div class="icon">
+
+            <span><i class="ri-facebook-fill"></i></span>
+            <span><i class="ri-instagram-line"></i></span>
+            <span><i class="ri-linkedin-fill"></i></span>
+            <span><i class="ri-whatsapp-line"></i></span>
+
+          </div>
+        </div>
+    </div>
+
+    <div class="flip">
+        <img src="./assert/a_11.jpg" width="100%" height="100%" alt="">
+        <div class="upper">
+          <h1>Lorem, ipsum dolor.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo dignissimos eveniet vitae, minima vel corporis commodi eius. Beatae minima, illum adipisci repudiandae sunt sit id cumque sint aspernatur vel dolores!</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo dignissimos eveniet vitae, minima vel corporis commodi eius. Beatae minima, illum adipisci repudiandae sunt sit id cumque sint aspernatur vel dolores!</p>
+
+          <div class="icon">
+
+            <span><i class="ri-facebook-fill"></i></span>
+            <span><i class="ri-instagram-line"></i></span>
+            <span><i class="ri-linkedin-fill"></i></span>
+            <span><i class="ri-whatsapp-line"></i></span>
+
+          </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script>
+    jQuery.noConflict();
+    jQuery(document).ready(function($){
+
+        $('.flip').mouseenter(function(){
+           $('.upper').slideDown(1000);
+        })
+
+        $('.flip').mouseleave(function(){
+           $('.upper').slideUp(1000);
+        })
+
+    })
+</script>
+</html>

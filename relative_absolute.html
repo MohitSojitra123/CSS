@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+/* z-index are work in only position relative absolute fixed.... */
+
+    .cl1{
+        padding: 20px;
+        width: 50%;
+        margin: 100px;
+        position: relative;
+        ;
+       
+    }
+
+    #one{
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  position: relative;
+  display: inline-block;
+  z-index: 3;
+    }
+
+    #two{
+        width: 100px;
+  height: 100px;
+  background-color:tomato;
+  position: relative;
+  display: inline-block;
+  top:50px;
+  left:-50px;
+  z-index: 1;
+    }
+
+    #three{
+    width: 100px;
+  height: 100px;
+  background-color:yellow;
+  position: relative;
+  display: inline-block;
+  top:100px;
+  left:-100px;
+z-index: 3;
+    }
+</style>
+<body>
+    <div class="cl1">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+    </div>
+</body>
+</html>

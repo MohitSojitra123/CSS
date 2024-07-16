@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    box-sizing: border-box;
+}
+
+.features{
+    padding: 10rem 0;     
+}
+
+.box-wrapper{
+    /* border: 3px solid black; */
+    box-shadow: 5px 5px 20px 0px black;   
+}
+
+.box1 , .box3{
+    background-color: #263238;
+    color: #fff;
+}
+
+.box2{
+    background:linear-gradient(25deg,#d64c7f,#ee4758 50%) ;
+    color: #fff;
+}
+
+.box{
+    width: 33.33%;
+    float: left;
+    /* border: 2px solid black; */
+    padding: 2rem;
+    text-align: center;
+}
+
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+</style>
+<body>
+  
+  <section class="features">
+    <div class="container">
+        <div class="box-wrapper">
+
+            <div class="box box1">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate temporibus cum placeat fugiat, laudantium in recusandae perferendis ducimus voluptas inventore voluptatem voluptatibus quibusdam consequuntur eum quaerat ad quisquam voluptates ipsam.</p>
+            </div>
+
+
+            <div class="box box2">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate temporibus cum placeat fugiat, laudantium in recusandae perferendis ducimus voluptas inventore voluptatem voluptatibus quibusdam consequuntur eum quaerat ad quisquam voluptates ipsam.</p>
+            </div>
+
+
+            <div class="box box3">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate temporibus cum placeat fugiat, laudantium in recusandae perferendis ducimus voluptas inventore voluptatem voluptatibus quibusdam consequuntur eum quaerat ad quisquam voluptates ipsam.</p>
+            </div>
+
+
+        </div>
+    </div>
+  </section>
+
+
+</body>
+</html>

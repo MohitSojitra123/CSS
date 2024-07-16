@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    html,body{
+        height: 100%;
+        width: 100%;
+    }
+
+    #main{
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card{
+        height: 300px;
+        width: 230px;
+        border: 2px solid salmon;
+        border-radius: 20px;
+    
+        position: absolute;
+
+    }
+
+    #card1{
+           background-color: antiquewhite;
+           z-index: 10;
+           
+    }
+
+    #card2{
+        z-index: 9;
+         border: 2px solid red;
+        background-color: aquamarine;
+         rotate: -8deg;
+   }
+
+   #card3{
+    z-index: 8;
+         border: 2px solid yellow;
+        background-color: yellowgreen;
+         rotate: -16deg;
+
+
+   }
+
+   #card4{
+    z-index: 7  ;
+         border: 2px solid blue ;
+         background-color: violet;
+         rotate: -24deg;
+   }
+
+   #card1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+   }
+
+   #card1:hover{
+    z-index: 100;
+   }
+
+   #card2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+   }
+
+   #card2:hover{
+    z-index: 200;
+   }
+
+   #card3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+   }
+
+   #card3:hover{
+    z-index: 300;
+   }
+
+   #card4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+   }
+
+   #card4:hover{
+    z-index: 400;
+   }
+
+</style>
+<body>
+    
+    <div id="main">
+ 
+        <div class="card" id="card4">
+            <img src="./assert/as4.png" alt="">
+        </div> 
+         <div class="card" id="card3">
+            <img src="assert/as3.png" alt="">
+         </div> 
+        <div class="card" id="card2">
+            <img src="./assert/as2.png" alt="">
+        </div> 
+        <div class="card" id="card1">
+            <img src="./assert/as1.png" alt="">
+        </div> 
+
+    </div>
+</body>
+</html>

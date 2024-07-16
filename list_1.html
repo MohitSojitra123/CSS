@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ol{
+       /* list-style-type: none;   */
+       /* list-style-type: circle; */
+       /* list-style-type: square; */
+       /* list-style-type: disc; */
+       list-style-image: url('./asserts/as4.png');
+       
+    }
+
+    ul{
+       /* list-style-type: upper-alpha; */
+       /* list-style-type: lower-alpha; */
+       /* list-style-type: lower-roman; */
+       /* list-style-type: upper-roman; */
+       list-style-type: decimal-leading-zero;
+
+    }
+
+    li{
+        border: 1px black solid;
+        list-style-position: inside;
+
+    }
+
+    table{
+        border: 1px solid black;
+        /* border-collapse:collapse ; */
+        border-spacing: 20px 40px;
+        /* empty-cells: hide; */
+    }
+
+    caption{
+        border: 1px solid black; 
+    }
+
+
+    th{
+        border: 1px solid black;
+        height: 40px; 
+    }
+
+    td{
+        border: 1px solid black;
+        height: 55px;
+        padding: 10px;
+        text-align: center;
+        /* vertical-align: bottom; */
+        /* vertical-align: top; */
+        /* vertical-align: middle; */
+    }
+</style>
+<body>
+    <h1>Unorder List</h1>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <h1>Order List</h1>
+    <ol>  
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+</ol>
+
+
+<br>
+<br>
+  <table>
+    <caption>table css</caption>
+    <tr>
+        <th>Heading := 1</th>
+        <th>Heading := 2</th>
+        <th>Heading := 3</th>
+    </tr>
+
+    <tr>
+        <td>Content 1</td>
+        <td>Content 1</td>
+        <td>Content 1</td>
+    </tr>
+
+    <tr>
+        <td>Content 1</td>
+        <td>Content 1</td>
+        <td></td>
+    </tr>
+     
+  </table>
+ 
+</body>
+</html>

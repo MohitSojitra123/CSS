@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 40px;
+    /* Globali Declare */
+    /* --my-variable :red; */
+
+}
+
+h1{
+    text-align: center;
+    /* not work local scope and global scope method */
+    background-color:var(--my-variable);
+    /* background-color:var(--my-variable,green); */
+
+
+}
+
+.box{
+    --my-variable :red;
+    padding: 20px;
+    background-color:var(--my-variable);
+}
+
+.box h2{
+    margin-bottom: 20px;
+}
+
+</style>
+<body>
+    <div class="container">
+        <h1>Inside Box</h1>
+        <div class="box">
+            <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In enim odit ea maiores beatae repudiandae esse nobis eaque eveniet laudantium explicabo voluptas quasi possimus illo provident non harum, dignissimos sit!</h2>
+        </div>
+    </div>
+</body>
+</html>

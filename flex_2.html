@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      background-color: aqua;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      /* Verticle Center Item */
+      height: 150vh;
+
+      /* provide blanck space */
+      align-items: center;
+
+      /* not a blanck space */
+      align-content: center;
+    }
+
+    .cl1 {
+      background-color: antiquewhite;
+      width: 100px;
+      height: 100px;
+      border: 2px black solid;
+      order: 4;
+    }
+
+    .cl2 {
+      background-color: aqua;
+      width: 100px;
+      height: 100px;
+      border: 2px black solid;
+    }
+
+    .cl3 {
+      background-color: antiquewhite;
+      width: 100px;
+      height: 100px;
+      flex-grow: 2;
+      border: 2px black solid;
+    }
+
+    .cl4 {
+      background-color: aqua;
+      width: 100px;
+      height: 100px;
+      border: 2px black solid;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="cl1">Div 1</div>
+      <div class="cl2">Div 2</div>
+      <div class="cl3">Div 3</div>
+      <div class="cl4">Div 4</div>
+    </div>
+  </body>
+</html>

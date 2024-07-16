@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ *body{
+    margin: 0px;
+    padding: 0px;
+ }   
+    
+.cl1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 50px;
+}
+
+.cl2{
+    /* not allocate new margin because cl1 margin one time in allocalted second time this margin age used in cl2 that is called in margin callepes
+     */
+    margin: 50px;  
+    height: 100px; 
+    width: 100px;
+    background-color:blue;
+}
+</style>
+<body>
+    <div class="cl1">
+
+    </div>
+
+    <div class="cl2">
+
+    </div>
+</body>
+</html>
